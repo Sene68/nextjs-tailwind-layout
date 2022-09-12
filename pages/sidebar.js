@@ -2,17 +2,24 @@ import React from 'react';
 
 // components
 
-import BrandSidebar from "../components/sidebar/BrandSidebar.js";
+import BrandSidebarLightHeader from '../layouts/BrandSidebarLightHeader.js';
 
 export default function Sidebar() {
   return (
     <>
-      <BrandSidebar />
-      <div className="relative md:ml-64 bg-blueGray-100">
-        <div className="px-4 md:px-10 mx-auto w-full -m-24">
-          Hello
+      <BrandSidebarLightHeader>
+        <div className='bg-gray-200'>
+          <div className="flex flex-wrap">
+            <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+              1
+            </div>
+            <div className="w-full xl:w-4/12 px-4">
+              2
+            </div>
+          </div>
         </div>
-      </div>
+        
+      </BrandSidebarLightHeader>
     </>
   );
 }

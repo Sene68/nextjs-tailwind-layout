@@ -3679,6 +3679,10 @@ select {
   transition-duration: 150ms;
 }
 
+.shadow-b {
+  box-shadow: 0 2px 2px -2px gray;
+}
+
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(360deg);

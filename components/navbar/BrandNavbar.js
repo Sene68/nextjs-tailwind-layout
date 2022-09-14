@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function BrandNavbar() {
   return (
@@ -21,6 +21,11 @@ export default function BrandNavbar() {
           </form>
           {/* User */}
           <ul className="flex-col md:flex-row list-none items-center hidden md:flex">
+            <div className="items-center flex">
+              <span className="w-12 h-12 text-sm text-white bg-blueGray-200 inline-flex items-center justify-center rounded-full">
+                <img alt="..." className="w-full rounded-full align-middle border-none shadow-lg" src="/img/384-original.jpg" />
+              </span>
+            </div>
           </ul>
         </div>
       </nav>

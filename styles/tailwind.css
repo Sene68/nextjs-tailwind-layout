@@ -3683,6 +3683,15 @@ select {
   box-shadow: 0 2px 2px -2px gray;
 }
 
+.dropdown-body {
+  border-top: 1px solid #E5E8EC;
+  display: none;
+}
+
+.dropdown-body.open {
+  display: block;
+}
+
 @-webkit-keyframes spin {
   to {
     -webkit-transform: rotate(360deg);

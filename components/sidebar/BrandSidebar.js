@@ -7,7 +7,7 @@ export default function BrandSidebar() {
   const router = useRouter();
   return (
     <>
-      <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
+      <nav className="bg-blue md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
           {/* Toggler */}
           <button
@@ -21,7 +21,7 @@ export default function BrandSidebar() {
           <Link href="/">
             <a
               href="#pablo"
-              className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
+              className="md:block text-left md:pb-2 text-white mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
             >
               Brand Sidebar
             </a>
@@ -40,7 +40,7 @@ export default function BrandSidebar() {
                   <Link href="/">
                     <a
                       href="#pablo"
-                      className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
+                      className="md:block text-left md:pb-2 text-white mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                     >
                       Brand Sidebar
                     </a>
@@ -76,8 +76,8 @@ export default function BrandSidebar() {
                     className={
                       "text-xs uppercase py-3 font-bold block " +
                       (router.pathname.indexOf("/admin/dashboard") !== -1
-                        ? "text-lightBlue-500 hover:text-lightBlue-600"
-                        : "text-blueGray-700 hover:text-blueGray-500")
+                        ? "text-white hover:text-lightBlue-600"
+                        : "text-white hover:text-blueGray-500")
                     }
                   >
                     <i
@@ -85,7 +85,7 @@ export default function BrandSidebar() {
                         "fas fa-tv mr-2 text-sm " +
                         (router.pathname.indexOf("/admin/dashboard") !== -1
                           ? "opacity-75"
-                          : "text-blueGray-300")
+                          : "text-white")
                       }
                     ></i>{" "}
                     Dashboard
@@ -100,8 +100,8 @@ export default function BrandSidebar() {
                     className={
                       "text-xs uppercase py-3 font-bold block " +
                       (router.pathname.indexOf("/admin/settings") !== -1
-                        ? "text-lightBlue-500 hover:text-lightBlue-600"
-                        : "text-blueGray-700 hover:text-blueGray-500")
+                        ? "text-white hover:text-lightBlue-600"
+                        : "text-white hover:text-blueGray-500")
                     }
                   >
                     <i
@@ -109,7 +109,7 @@ export default function BrandSidebar() {
                         "fas fa-tools mr-2 text-sm " +
                         (router.pathname.indexOf("/admin/settings") !== -1
                           ? "opacity-75"
-                          : "text-blueGray-300")
+                          : "text-white")
                       }
                     ></i>{" "}
                     Team
@@ -124,8 +124,8 @@ export default function BrandSidebar() {
                     className={
                       "text-xs uppercase py-3 font-bold block " +
                       (router.pathname.indexOf("/admin/tables") !== -1
-                        ? "text-lightBlue-500 hover:text-lightBlue-600"
-                        : "text-blueGray-700 hover:text-blueGray-500")
+                        ? "text-white hover:text-lightBlue-600"
+                        : "text-white hover:text-blueGray-500")
                     }
                   >
                     <i
@@ -133,7 +133,7 @@ export default function BrandSidebar() {
                         "fas fa-table mr-2 text-sm " +
                         (router.pathname.indexOf("/admin/tables") !== -1
                           ? "opacity-75"
-                          : "text-blueGray-300")
+                          : "text-white")
                       }
                     ></i>{" "}
                     Projects
@@ -148,8 +148,8 @@ export default function BrandSidebar() {
                     className={
                       "text-xs uppercase py-3 font-bold block " +
                       (router.pathname.indexOf("/admin/maps") !== -1
-                        ? "text-lightBlue-500 hover:text-lightBlue-600"
-                        : "text-blueGray-700 hover:text-blueGray-500")
+                        ? "text-white hover:text-lightBlue-600"
+                        : "text-white hover:text-blueGray-500")
                     }
                   >
                     <i
@@ -157,7 +157,7 @@ export default function BrandSidebar() {
                         "fas fa-map-marked mr-2 text-sm " +
                         (router.pathname.indexOf("/admin/maps") !== -1
                           ? "opacity-75"
-                          : "text-blueGray-300")
+                          : "text-white")
                       }
                     ></i>{" "}
                     Calendar

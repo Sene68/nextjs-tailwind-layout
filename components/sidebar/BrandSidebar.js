@@ -19,12 +19,15 @@ export default function BrandSidebar() {
           </button>
           {/* Brand */}
           <Link href="/">
-            <a
+            <div className="text-left pt-3">
+              <img className="h-8 w-auto sm:h-10" src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=200' alt="" />
+            </div>
+            {/* <a
               href="#pablo"
               className="md:block text-left md:pb-2 text-white mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
             >
               Brand Sidebar
-            </a>
+            </a> */}
           </Link>
           {/* Collapse */}
           <div

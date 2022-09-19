@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="text-3xl font-bold underline">
+        <h1 className="font-Montserrat text-3xl font-bold underline">
           Hello world!
         </h1>
 

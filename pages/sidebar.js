@@ -10,7 +10,7 @@ export default function Sidebar() {
       <BrandSidebarLightHeader>
         <div className='bg-gray-200 h-screen'>
           <div className="flex flex-wrap">
-            <div className="w-full mb-12 xl:mb-0 px-4">
+            <div className="font-Montserrat w-full mb-12 xl:mb-0 px-4">
               Dashboard
             </div>
           </div>

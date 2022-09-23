@@ -7,7 +7,7 @@ export default function BrandSidebar() {
   const router = useRouter();
   return (
     <>
-      <nav className="bg-indigo-700 md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">
+      <nav className="bg-indigo-700 md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-4">
         <div className="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
           {/* Toggler */}
           <button
@@ -19,7 +19,7 @@ export default function BrandSidebar() {
           </button>
           {/* Brand */}
           <Link href="/">
-            <div className="text-left pt-3">
+            <div className="text-left pt-3 pl-3">
               <img className="h-8 w-auto sm:h-10" src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=200' alt="" />
             </div>
           </Link>
@@ -71,10 +71,10 @@ export default function BrandSidebar() {
                   <a
                     href="#pablo"
                     className={
-                      "text-xs uppercase py-3 font-bold block font-Montserrat " +
-                      (router.pathname.indexOf("/admin/dashboard") !== -1
+                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " +
+                      (router.pathname.indexOf("/sidebar/brand") !== -1
                         ? "text-white hover:text-lightBlue-600"
-                        : "text-white hover:text-blueGray-500")
+                        : "text-white bg-indigo-800")
                     }
                   >
                     <i
@@ -95,7 +95,7 @@ export default function BrandSidebar() {
                   <a
                     href="#pablo"
                     className={
-                      "text-xs uppercase py-3 font-bold block font-Montserrat " +
+                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " +
                       (router.pathname.indexOf("/admin/settings") !== -1
                         ? "text-white hover:text-lightBlue-600"
                         : "text-white hover:text-blueGray-500")
@@ -119,7 +119,7 @@ export default function BrandSidebar() {
                   <a
                     href="#pablo"
                     className={
-                      "text-xs uppercase py-3 font-bold block font-Montserrat " +
+                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " +
                       (router.pathname.indexOf("/admin/tables") !== -1
                         ? "text-white hover:text-lightBlue-600"
                         : "text-white hover:text-blueGray-500")
@@ -143,7 +143,7 @@ export default function BrandSidebar() {
                   <a
                     href="#pablo"
                     className={
-                      "text-xs uppercase py-3 font-bold block font-Montserrat " +
+                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " +
                       (router.pathname.indexOf("/admin/maps") !== -1
                         ? "text-white hover:text-lightBlue-600"
                         : "text-white hover:text-blueGray-500")

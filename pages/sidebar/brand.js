@@ -2,7 +2,7 @@ import React from 'react';
 
 // components
 
-import BrandSidebarLightHeader from '../layouts/BrandSidebarLightHeader.js';
+import BrandSidebarLightHeader from '../../layouts/BrandSidebarLightHeader.js';
 
 export default function Sidebar() {
   return (

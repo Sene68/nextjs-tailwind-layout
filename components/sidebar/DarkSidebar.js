@@ -71,10 +71,10 @@ export default function BrandSidebar() {
                   <a
                     href="#pablo"
                     className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " +
+                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
                       (router.pathname.indexOf("/sidebar/brand") !== -1
                         ? "text-white hover:text-lightBlue-600"
-                        : "text-white bg-indigo-800")
+                        : "text-white bg-gray-900")
                     }
                   >
                     <i
@@ -95,7 +95,7 @@ export default function BrandSidebar() {
                   <a
                     href="#pablo"
                     className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " +
+                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
                       (router.pathname.indexOf("/admin/settings") !== -1
                         ? "text-white hover:text-lightBlue-600"
                         : "text-white hover:text-blueGray-500")
@@ -119,7 +119,7 @@ export default function BrandSidebar() {
                   <a
                     href="#pablo"
                     className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " +
+                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
                       (router.pathname.indexOf("/admin/tables") !== -1
                         ? "text-white hover:text-lightBlue-600"
                         : "text-white hover:text-blueGray-500")
@@ -143,7 +143,7 @@ export default function BrandSidebar() {
                   <a
                     href="#pablo"
                     className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " +
+                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
                       (router.pathname.indexOf("/admin/maps") !== -1
                         ? "text-white hover:text-lightBlue-600"
                         : "text-white hover:text-blueGray-500")

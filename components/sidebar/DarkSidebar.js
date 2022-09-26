@@ -72,7 +72,7 @@ export default function BrandSidebar() {
                     href="#pablo"
                     className={
                       "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
-                      (router.pathname.indexOf("/sidebar/brand") !== -1
+                      (router.pathname.indexOf("/sidebar/dark") !== -1
                         ? "text-white hover:text-lightBlue-600"
                         : "text-white bg-gray-900")
                     }

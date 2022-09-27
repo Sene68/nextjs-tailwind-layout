@@ -2,6 +2,14 @@ import React from "react";
 import Link from "next/link";
 
 export default function BrandSidebar() {
+  const menus = [
+    {id: 1, text:'Dashboard', icon:'fa-tv'}, 
+    {id: 2, text:'Team', icon:'fa-tools'},
+    {id: 3, text:'Projects', icon:'fa-table'},
+    {id: 4, text:'Calendar', icon:'fa-map-marked'}
+  ];
+  
+
   return (
     <>
       <nav className="bg-indigo-700 md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-4">
@@ -19,74 +27,25 @@ export default function BrandSidebar() {
             }
           >
             <ul className="md:flex-col md:min-w-full flex flex-col list-none">
-              <li className="items-center">
-                <Link href="/admin/dashboard">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " 
-                    }
-                  >
-                    <i
+              {menus.map(menu => (
+                <li key={menu.id} className="items-center">
+                  <Link href="/">
+                    <a
+                      href="#pablo"
                       className={
-                        "fas fa-tv mr-2 text-sm "
+                        "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white " 
                       }
-                    ></i>{" "}
-                    Dashboard
-                  </a>
-                </Link>
-              </li>
-              <li className="items-center">
-                <Link href="/admin/settings">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white "
-                    }
-                  >
-                    <i
-                      className={
-                        "fas fa-tools mr-2 text-sm "
-                      }
-                    ></i>{" "}
-                    Team
-                  </a>
-                </Link>
-              </li>
-              <li className="items-center">
-                <Link href="/admin/tables">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white "
-                    }
-                  >
-                    <i
-                      className={
-                        "fas fa-table mr-2 text-sm "
-                      }
-                    ></i>{" "}
-                    Projects
-                  </a>
-                </Link>
-              </li>
-              <li className="items-center">
-                <Link href="/admin/maps">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-indigo-800 hover:text-white "
-                    }
-                  >
-                    <i
-                      className={
-                        "fas fa-map-marked mr-2 text-sm "
-                      }
-                    ></i>{" "}
-                    Calendar
-                  </a>
-                </Link>
-              </li>
+                    >
+                      <i
+                        className={
+                          "fas mr-2 text-sm " + menu.icon
+                        }
+                      ></i>{" "}
+                      {menu.text}
+                    </a>
+                  </Link>
+                </li>
+              ))}             
             </ul>
           </div>
         </div>

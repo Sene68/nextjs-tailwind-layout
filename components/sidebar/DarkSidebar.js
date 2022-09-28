@@ -3,6 +3,13 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function BrandSidebar() {
+  const menus = [
+    {id: 1, text:'Dashboard', icon:'fa-tv'}, 
+    {id: 2, text:'Team', icon:'fa-tools'},
+    {id: 3, text:'Projects', icon:'fa-table'},
+    {id: 4, text:'Calendar', icon:'fa-map-marked'}
+  ];
+  
   const [collapseShow, setCollapseShow] = useState("hidden");
   const router = useRouter();
   return (
@@ -66,101 +73,25 @@ export default function BrandSidebar() {
             </form>
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none">
-              <li className="items-center">
-                <Link href="/admin/dashboard">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
-                      (router.pathname.indexOf("/sidebar/dark") !== -1
-                        ? "text-white hover:text-lightBlue-600"
-                        : "text-white bg-gray-900")
-                    }
-                  >
-                    <i
+            {menus.map(menu => (
+                <li key={menu.id} className="items-center">
+                  <Link href="/">
+                    <a
+                      href="#pablo"
                       className={
-                        "fas fa-tv mr-2 text-sm " +
-                        (router.pathname.indexOf("/admin/dashboard") !== -1
-                          ? "opacity-75"
-                          : "text-white")
+                        "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " 
                       }
-                    ></i>{" "}
-                    Dashboard
-                  </a>
-                </Link>
-              </li>
-
-              <li className="items-center">
-                <Link href="/admin/settings">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
-                      (router.pathname.indexOf("/admin/settings") !== -1
-                        ? "text-white hover:text-lightBlue-600"
-                        : "text-white hover:text-blueGray-500")
-                    }
-                  >
-                    <i
-                      className={
-                        "fas fa-tools mr-2 text-sm " +
-                        (router.pathname.indexOf("/admin/settings") !== -1
-                          ? "opacity-75"
-                          : "text-white")
-                      }
-                    ></i>{" "}
-                    Team
-                  </a>
-                </Link>
-              </li>
-
-              <li className="items-center">
-                <Link href="/admin/tables">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
-                      (router.pathname.indexOf("/admin/tables") !== -1
-                        ? "text-white hover:text-lightBlue-600"
-                        : "text-white hover:text-blueGray-500")
-                    }
-                  >
-                    <i
-                      className={
-                        "fas fa-table mr-2 text-sm " +
-                        (router.pathname.indexOf("/admin/tables") !== -1
-                          ? "opacity-75"
-                          : "text-white")
-                      }
-                    ></i>{" "}
-                    Projects
-                  </a>
-                </Link>
-              </li>
-
-              <li className="items-center">
-                <Link href="/admin/maps">
-                  <a
-                    href="#pablo"
-                    className={
-                      "text-xs uppercase py-3 font-bold block pl-3 font-Montserrat text-white hover:bg-gray-900 hover:text-white " +
-                      (router.pathname.indexOf("/admin/maps") !== -1
-                        ? "text-white hover:text-lightBlue-600"
-                        : "text-white hover:text-blueGray-500")
-                    }
-                  >
-                    <i
-                      className={
-                        "fas fa-map-marked mr-2 text-sm " +
-                        (router.pathname.indexOf("/admin/maps") !== -1
-                          ? "opacity-75"
-                          : "text-white")
-                      }
-                    ></i>{" "}
-                    Calendar
-                  </a>
-                </Link>
-              </li>
+                    >
+                      <i
+                        className={
+                          "fas mr-2 text-sm " + menu.icon
+                        }
+                      ></i>{" "}
+                      {menu.text}
+                    </a>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

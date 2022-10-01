@@ -17,7 +17,7 @@ export default function LightSidebar() {
           {/* Brand */}
           <Link href="/">
             <div className="text-left pt-3 pl-3">
-              <img className="h-8 w-auto sm:h-10" src='https://tailwindui.com/img/logos/mark.svg?color=blue&shade=800' alt="" />
+              <img className="h-8 w-auto sm:h-10" src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600' alt="" />
             </div>
           </Link>
           {/* Collapse */}

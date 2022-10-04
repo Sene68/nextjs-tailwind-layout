@@ -33,7 +33,16 @@ export default function Home() {
               <h2 className='font-Montserrat font-bold'>Light Sidebar &rarr;</h2>
             </a>
           </Link>
-          
+          <Link href="/stack/dark">
+            <a className={styles.card}>
+              <h2 className='font-Montserrat font-bold'>Dark Stack &rarr;</h2>
+            </a>
+          </Link>
+          <Link href="/stack/light">
+            <a className={styles.card}>
+              <h2 className='font-Montserrat font-bold'>Light Stack &rarr;</h2>
+            </a>
+          </Link>
         </div>
       </main>
 

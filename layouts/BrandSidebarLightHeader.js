@@ -11,7 +11,7 @@ export default function BrandSidebarLightHeader({ children }) {
       <BrandSidebar />
       <div className="relative ml-64 bg-gray-200">
         <Navbar />
-        <div className="relative pt-24 mx-auto w-full -m-24">
+        <div className="mx-auto w-full">
           {children}
         </div>
       </div>
